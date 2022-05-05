@@ -1,0 +1,1 @@
+[{"model": "api.meetingtype", "pk": 1, "fields": {"name": "Veckomöte", "description": "", "tasks": [1, 2, 3, 4, 5, 6]}}, {"model": "api.meetingtype", "pk": 2, "fields": {"name": "Helgmöte", "description": "", "tasks": [1, 2, 3, 4, 5, 6]}}]

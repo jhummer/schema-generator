@@ -1,0 +1,12 @@
+ipython autoreload modules:
+
+./manage.py shell
+
+In [1]: %load_ext autoreload
+In [2]: %autoreload 2
+
+## Loaddata & dumpdata
+
+manage.py loaddata <fixturename>
+
+manage.py dumpdata api.<Model> -o api/fixtures/<model>.json
