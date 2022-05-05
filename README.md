@@ -1,9 +1,5 @@
 ## Schema Generator
 
-Generates a rotating schema. The schema is based on assignment roles and assignees.
+A tool for setting up re-occuring events, tasks and persons to handle the tasks during the events.
 
-## Usage
-
-Define assignments, roles and assignees in your local `assignments.yml`. Generate schema with:
-
-`python schema.py`
+Automatically assigns persons to event tasks based on qualifications and task history.
