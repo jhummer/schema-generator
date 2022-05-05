@@ -57,10 +57,14 @@ class Task(models.Model):
     qualifiers = models.ManyToManyField(
         Person, related_name="qualified_for", blank=True
     )
-    # singleton     - can only have this task?
+    # can only have this task at event
+    singleton = models.BooleanField(default=True)
+    # this task blacklists these other tasks
+    blacklists = models.ManyToManyField(
+        "self", symmetrical=False, related_name="blacklisted_by"
+    )
     # rank          - ranking of the task?
     # standin       - possible
-    # blacklists    - cant have these tasks while having this task
     # whitelists    - these other tasks can be had while having this task
 
     def __str__(self):
